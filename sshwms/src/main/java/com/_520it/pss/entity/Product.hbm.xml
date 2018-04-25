@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com._520it.pss.entity">
+	<class name="Product">
+		<id name="id">
+			<generator class="native" />
+		</id>
+			 <property name="costPrice" />
+			 <property name="imagePath" />
+			 <property name="intro" />
+			 <property name="name" />
+			 <property name="salePrice" />
+			 <property name="sn" />
+			 <many-to-one name="brand" column="brand_id"></many-to-one>
+	</class>
+	
+</hibernate-mapping>
